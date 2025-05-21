@@ -1,7 +1,26 @@
+buildscript {
+    repositories {
+        // 国内镜像源
+//        maven { url 'https://maven.aliyun.com/repository/google' }
+//        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+//        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        // 你的依赖项
+    }
+}
 allprojects {
     repositories {
+        // 国内镜像源
+//        maven { url 'https://maven.aliyun.com/repository/google' }
+//        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+//        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
         google()
-        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
 
